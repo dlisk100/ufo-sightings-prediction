@@ -66,6 +66,27 @@ To work with this repository in Google Colab:
 4. Enter the repository URL: `https://github.com/dlisk100/ufo-sightings-prediction`
 5. Choose the notebook you want to work on
 
+#### Accessing Data in Colab
+
+Since the data files are too large for GitHub, we store them in Google Drive. Here's how to access them in Colab:
+
+1. Download the dataset from [Kaggle UFO Sightings](https://www.kaggle.com/NUFORC/ufo-sightings)
+2. Upload the data to a folder in your Google Drive (e.g., `UFO-Project/data/`)
+3. Add this code at the beginning of your notebook:
+```python
+# Mount Google Drive
+from google.colab import drive
+drive.mount('/content/drive')
+
+# Set the data path to your Google Drive location
+import os
+data_path = '/content/drive/My Drive/UFO-Project/data/complete.csv'  # Adjust path as needed
+
+# Load the data
+import pandas as pd
+df = pd.read_csv(data_path)
+```
+
 #### Saving Changes Back to GitHub
 
 1. Mount your Google Drive (if needed for data):
@@ -102,5 +123,3 @@ Note: For pushing changes, you'll need to authenticate with GitHub. We recommend
 - Week 4: Exploratory Data Analysis Complete
 - Week 6: Initial Model Development
 - Week 8: Model Refinement and Validation
-
-
