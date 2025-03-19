@@ -17,22 +17,37 @@ A data science project to predict UFO sighting locations and durations using his
 ## Getting Started
 1. Clone the repository
 ```bash
-git clone https://github.com/[username]/ufo-sightings-prediction.git
+git clone https://github.com/dlisk100/ufo-sightings-prediction.git
 cd ufo-sightings-prediction
 ```
 
-2. Create and activate virtual environment
+2. Set up the development environment:
+
+For Mac/Linux users:
 ```bash
-# Using venv (Python 3.9)
-python3.9 -m venv venv
-source venv/bin/activate  # On Unix/macOS
-# or
-venv\Scripts\activate  # On Windows
+./setup.sh
 ```
 
-3. Install dependencies
+For Windows users:
+```batch
+setup.bat
+```
+
+This will:
+- Create a virtual environment
+- Activate the virtual environment
+- Install all required dependencies
+
+3. Activate the virtual environment (for subsequent sessions):
+
+For Mac/Linux:
 ```bash
-pip install -r requirements.txt
+source venv/bin/activate
+```
+
+For Windows:
+```batch
+venv\Scripts\activate.bat
 ```
 
 ## Branching Strategy
