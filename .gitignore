@@ -12,6 +12,7 @@ __pycache__/
 # Jupyter Notebook
 .ipynb_checkpoints
 *.ipynb_checkpoints/
+Untitled*.ipynb
 
 # Distribution / packaging
 dist/
@@ -37,3 +38,7 @@ data/*.pkl
 *.swp
 *.swo
 .DS_Store
+
+# Generated files
+*.html
+!templates/*.html
