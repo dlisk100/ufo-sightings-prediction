@@ -23,6 +23,18 @@ A data science project to predict UFO sighting locations and durations using his
 
 ## Getting Started
 ### Local Development
+#### Setting Up Kaggle API
+1. Create a Kaggle account at [kaggle.com](https://www.kaggle.com) if you don't have one
+2. Go to your Kaggle account settings (https://www.kaggle.com/account)
+3. Scroll to the API section and click "Create New API Token"
+4. This will download `kaggle.json` containing your API credentials
+5. Create the Kaggle directory and move the token:
+```bash
+mkdir -p ~/.kaggle
+mv /path/to/downloaded/kaggle.json ~/.kaggle/
+chmod 600 ~/.kaggle/kaggle.json  # Set proper permissions
+```
+
 #### Cloning the Repository
 1. Clone the repository:
 ```bash
