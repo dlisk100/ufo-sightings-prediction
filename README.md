@@ -22,14 +22,15 @@ A data science project to predict UFO sighting locations and durations using his
 - `/models`: Machine learning models
 
 ## Getting Started
-### Cloning the Repository
+### Local Development
+#### Cloning the Repository
 1. Clone the repository:
 ```bash
 git clone https://github.com/dlisk100/ufo-sightings-prediction.git
 cd ufo-sightings-prediction
 ```
 
-### Setting Up the Development Environment
+#### Setting Up the Development Environment
 2. Set up the development environment:
 #### For Mac/Linux Users
 ```bash
@@ -54,6 +55,42 @@ source venv/bin/activate
 ```batch
 venv\Scripts\activate.bat
 ```
+
+### Google Colab Integration
+
+To work with this repository in Google Colab:
+
+1. Open [Google Colab](https://colab.research.google.com)
+2. Click `File` → `Open notebook`
+3. Select the `GitHub` tab
+4. Enter the repository URL: `https://github.com/dlisk100/ufo-sightings-prediction`
+5. Choose the notebook you want to work on
+
+#### Saving Changes Back to GitHub
+
+1. Mount your Google Drive (if needed for data):
+```python
+from google.colab import drive
+drive.mount('/content/drive')
+```
+
+2. Clone the repository and configure Git:
+```python
+!git clone https://github.com/dlisk100/ufo-sightings-prediction.git
+%cd ufo-sightings-prediction
+
+!git config --global user.email "your.email@example.com"
+!git config --global user.name "Your Name"
+```
+
+3. After making changes, commit and push:
+```python
+!git add .
+!git commit -m "Update notebook with new analysis"
+!git push
+```
+
+Note: For pushing changes, you'll need to authenticate with GitHub. We recommend using a [Personal Access Token](https://github.com/settings/tokens) for authentication.
 
 ## Branching Strategy
 - `main`: Stable production code
