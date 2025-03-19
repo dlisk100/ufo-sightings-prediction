@@ -3,10 +3,11 @@
 ## Primary Dataset: UFO Sightings
 
 ### Source
-- Dataset: NUFORC UFO Sightings
-- Provider: Kaggle (NUFORC/ufo-sightings)
-- Time Range: 1949-2014
-- Records: 80,000+
+
+* Dataset: NUFORC UFO Sightings
+* Provider: Kaggle (NUFORC/ufo-sightings)
+* Time Range: 1949-2014
+* Records: 80,000+
 
 ### Fields
 
@@ -27,33 +28,38 @@
 ## Additional Datasets
 
 ### NOAA Weather Data
-- Temperature
-- Precipitation
-- Cloud cover
-- Wind conditions
-- Visibility
-- Other atmospheric conditions
+
+* Temperature
+* Precipitation
+* Cloud cover
+* Wind conditions
+* Visibility
+* Other atmospheric conditions
 
 ### US Bureau of Economic Analysis (BEA) Data
-- GDP by state
-- Personal income
-- Employment statistics
-- Industry-specific economic indicators
+
+* GDP by state
+* Personal income
+* Employment statistics
+* Industry-specific economic indicators
 
 ### Population Data
-- Population density
-- Demographic information
-- Urban vs. rural classification
+
+* Population density
+* Demographic information
+* Urban vs. rural classification
 
 ### Media Coverage Data
-- News articles
-- TV coverage
-- Social media mentions
-- Related events
+
+* News articles
+* TV coverage
+* Social media mentions
+* Related events
 
 ## Data Integration Plan
 
-The datasets will be integrated using:
+The datasets will be integrated using the following methods:
+
 1. Location (latitude/longitude, city, state)
 2. Date/time of sightings
 3. Regional economic indicators
@@ -61,23 +67,27 @@ The datasets will be integrated using:
 
 ## Data Quality Notes
 
-1. Primary Dataset:
-   - Check for missing values
-   - Validate coordinates
-   - Standardize duration formats
-   - Clean and normalize location names
+### Primary Dataset
 
-2. Weather Data:
-   - Match closest weather station to sighting location
-   - Interpolate missing weather data
-   - Account for time zone differences
+* Check for missing values
+* Validate coordinates
+* Standardize duration formats
+* Clean and normalize location names
 
-3. Economic Data:
-   - Handle temporal aggregation (yearly to monthly/daily)
-   - Account for reporting delays
-   - Normalize monetary values
+### Weather Data
 
-4. Population Data:
-   - Handle census period interpolation
-   - Account for population estimate updates
-   - Standardize geographic boundaries
+* Match closest weather station to sighting location
+* Interpolate missing weather data
+* Account for time zone differences
+
+### Economic Data
+
+* Handle temporal aggregation (yearly to monthly/daily)
+* Account for reporting delays
+* Normalize monetary values
+
+### Population Data
+
+* Handle census period interpolation
+* Account for population estimate updates
+* Standardize geographic boundaries

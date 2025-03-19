@@ -3,6 +3,7 @@
 A data science project to predict UFO sighting locations and durations using historical data. This project is being developed by a team of 4 NYU Stern MBA students.
 
 ## Project Overview
+### Objective and Dataset
 - **Objective**: Predict UFO sighting locations and durations using comprehensive historical data for media/government use
 - **Primary Dataset**: Complete Kaggle UFO sightings dataset (80,000+ records, 1949-2014)
 - **Additional Data Sources**:
@@ -13,6 +14,7 @@ A data science project to predict UFO sighting locations and durations using his
   - Additional UFO databases and reports
 
 ## Project Structure
+### Directory Organization
 - `/data`: Datasets storage (not tracked in git for large files)
 - `/notebooks`: Jupyter notebooks for analysis
 - `/scripts`: Python scripts for data processing
@@ -20,44 +22,42 @@ A data science project to predict UFO sighting locations and durations using his
 - `/models`: Machine learning models
 
 ## Getting Started
-1. Clone the repository
+### Cloning the Repository
+1. Clone the repository:
 ```bash
 git clone https://github.com/dlisk100/ufo-sightings-prediction.git
 cd ufo-sightings-prediction
 ```
 
+### Setting Up the Development Environment
 2. Set up the development environment:
-
-For Mac/Linux users:
+#### For Mac/Linux Users
 ```bash
 ./setup.sh
 ```
-
-For Windows users:
+#### For Windows Users
 ```batch
 setup.bat
 ```
-
 This will:
 - Create a virtual environment
 - Activate the virtual environment
 - Install all required dependencies
 
+### Activating the Virtual Environment
 3. Activate the virtual environment (for subsequent sessions):
-
-For Mac/Linux:
+#### For Mac/Linux
 ```bash
 source venv/bin/activate
 ```
-
-For Windows:
+#### For Windows
 ```batch
 venv\Scripts\activate.bat
 ```
 
 ## Branching Strategy
 - `main`: Stable production code
-- `feature/*`: Individual feature branches (e.g., feature/data-cleaning)
+- `feature/*`: Individual feature branches (e.g., `feature/data-cleaning`)
 - Use pull requests for code review and merging
 
 ## Project Milestones

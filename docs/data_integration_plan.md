@@ -4,14 +4,14 @@
 This document outlines the strategy for integrating multiple data sources to create a comprehensive dataset for UFO sighting prediction.
 
 ## Data Sources
-
-### 1. Primary Data
+### Primary Data
 - **UFO Sightings Dataset**
   - Source: Kaggle (NUFORC/ufo-sightings)
   - Integration Key: datetime, latitude, longitude
   - Update Frequency: One-time historical data
 
-### 2. Weather Data
+### Secondary Data
+#### Weather Data
 - **NOAA Weather Data**
   - Source: NOAA API
   - Integration Key: datetime, nearest weather station
@@ -25,7 +25,7 @@ This document outlines the strategy for integrating multiple data sources to cre
     - Visibility
     - Atmospheric pressure
 
-### 3. Economic Data
+#### Economic Data
 - **BEA Economic Indicators**
   - Source: BEA API
   - Integration Key: state, date (monthly/quarterly)
@@ -36,7 +36,7 @@ This document outlines the strategy for integrating multiple data sources to cre
     - Personal income
     - Employment rates
 
-### 4. Population Data
+#### Population Data
 - **US Census Data**
   - Source: Census Bureau API
   - Integration Key: state, county, city
@@ -47,11 +47,10 @@ This document outlines the strategy for integrating multiple data sources to cre
     - Demographics
 
 ## Integration Strategy
-
 ### Phase 1: Data Collection
 1. Download primary UFO dataset
 2. Set up API connections for weather, economic, and population data
-3. Create data lake structure in /data directory
+3. Create data lake structure in `/data` directory
 4. Implement automated data collection scripts
 
 ### Phase 2: Data Preprocessing
@@ -85,9 +84,8 @@ This document outlines the strategy for integrating multiple data sources to cre
    - Interpolate annual data
 
 ## Technical Implementation
-
 ### Database Structure
-```
+```markdown
 data/
 ├── raw/                 # Original datasets
 ├── processed/           # Cleaned individual datasets
@@ -114,7 +112,7 @@ data/
    - Integration verification
 
 ## Schedule and Milestones
-
+### Project Timeline
 1. Week 1: Setup and Primary Data
    - Repository setup
    - Download UFO dataset
@@ -136,18 +134,17 @@ data/
    - Documentation updated
 
 ## Monitoring and Maintenance
+### Data Quality Metrics
+- Completeness checks
+- Consistency validation
+- Integration accuracy
 
-1. Data Quality Metrics
-   - Completeness checks
-   - Consistency validation
-   - Integration accuracy
+### Update Procedures
+- Automated data refresh scripts
+- Version control for datasets
+- Change logging
 
-2. Update Procedures
-   - Automated data refresh scripts
-   - Version control for datasets
-   - Change logging
-
-3. Documentation
-   - API credentials management
-   - Data update procedures
-   - Troubleshooting guides
+### Documentation
+- API credentials management
+- Data update procedures
+- Troubleshooting guides
