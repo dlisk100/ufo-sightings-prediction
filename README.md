@@ -103,5 +103,4 @@ Note: For pushing changes, you'll need to authenticate with GitHub. We recommend
 - Week 6: Initial Model Development
 - Week 8: Model Refinement and Validation
 
-## Professor Feedback Response
-This project emphasizes descriptive analysis and practical model applications, particularly focusing on media use cases such as news coverage planning. We are working with a focused subset of U.S. sightings from 2000-2014 to ensure thorough analysis within project constraints.
+
