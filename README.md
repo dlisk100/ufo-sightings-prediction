@@ -3,9 +3,14 @@
 A data science project to predict UFO sighting locations and durations using historical data. This project is being developed by a team of 4 NYU Stern MBA students.
 
 ## Project Overview
-- **Objective**: Predict UFO sighting locations and durations using historical data for media/government use
-- **Primary Dataset**: Kaggle UFO sightings dataset (80,000+ records, 1949-2014)
-- **Additional Data**: Weather data, GDP, and other relevant sources will be integrated
+- **Objective**: Predict UFO sighting locations and durations using comprehensive historical data for media/government use
+- **Primary Dataset**: Complete Kaggle UFO sightings dataset (80,000+ records, 1949-2014)
+- **Additional Data Sources**:
+  - NOAA weather data
+  - US Bureau of Economic Analysis GDP data
+  - Population density data
+  - Media coverage data
+  - Additional UFO databases and reports
 
 ## Project Structure
 - `/data`: Datasets storage (not tracked in git for large files)

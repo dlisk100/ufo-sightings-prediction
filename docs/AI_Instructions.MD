@@ -3,9 +3,10 @@ This document provides instructions for an AI assistant (e.g., Grok 3 by xAI or 
 
 Project Overview
 Objective: Predict the location and duration of UFO sightings using historical data for a media company (e.g., The Weather Channel) or government agency (e.g., National UFO Reporting Center).
-Data: Primary dataset is the Kaggle UFO sightings dataset (80,000+ records, 1949–2014), with plans to integrate additional sources (weather, GDP, etc.).
+Data: Primary dataset is the Kaggle UFO sightings dataset (80,000+ records, 1949–2014), with plans to integrate additional data sources (weather, GDP, etc.) for comprehensive analysis.
 Team: 4 members collaborating via GitHub.
-Focus: Environment setup and data preparation (no coding or modeling advice unless explicitly requested).
+Focus: Environment setup and data preparation.
+
 AI Role
 Provide step-by-step guidance, generate files, and suggest best practices.
 Avoid generating images unless confirmed by the user.
@@ -53,8 +54,8 @@ Draft a team_workflow.md with a weekly meeting schedule and task rotation plan f
 Add a Project Milestones section to the README (e.g., Week 2: Data Collected, Week 4: EDA Complete).
 Create an environment test checklist (env_test.md) for team members to verify their setup.
 4. Professor Feedback Response
-Include a README section (Professor Feedback Response) explaining the focus on descriptive analysis and a simple model, with media use cases (e.g., news coverage).
-Suggest a data subset (data_subset.md) of U.S. sightings from 2000–2014 to reduce workload.
+This project emphasizes comprehensive data analysis and advanced modeling techniques, focusing on identifying patterns and correlations across the entire UFO sightings dataset. We will integrate multiple data sources to create a robust prediction model that can be used for media coverage planning and research purposes.
+
 Guidelines
 Tone: Professional, clear, and concise.
 Scope: Focus on setup and prep; avoid unsolicited coding or modeling advice.
